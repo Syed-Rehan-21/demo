@@ -1,4 +1,4 @@
-def best_first_search(actual_Src, target, n):
+def BFS(actual_Src, target, n):
     visited = [False for i in range(n)]
     pq = PriorityQueue()
     pq.put((0, actual_Src)) 
@@ -49,8 +49,7 @@ addedge(4, 11, 10)
 
 source = 0
 target = 7
-
-best_first_search(source, target, v)
+BFS(source, target, v)
 
 print('Output: ', output)
 path = []

@@ -20,7 +20,7 @@ def aStarAlgo(start_node,stop_node):
             print("Path found: ",path)
             return None
         else:
-            for(m,weight) in get_neighbours(n):
+            for(m,weight) in get_neighbours(n): 
                 if m not in open_set and m not in closed_set:
                     open_set.add(m)
                     parent[m]=n
