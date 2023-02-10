@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="studentForm">
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script>
+        angular.module("studentForm", [])
+            .controller("formCtrl", function ($scope) {
+                $scope.submitForm = function () {
+                    if ($scope.studentForm.$valid) {
+                        alert("Form is valid!");
+                    } else {
+                        alert("Form is invalid!");
+                    }
+                };
+            });
+    </script>
+</head>
+
+<body ng-controller="formCtrl">
+    <form name="studentForm">
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" ng-model="student.name" required>
+            <span ng-show="studentForm.name.$error.required">Name is required</span>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" ng-model="student.email" required>
+            <span ng-show="studentForm.email.$error.required">Email is required</span>
+            <span ng-show="studentForm.email.$error.email">Invalid email</span>
+        </div>
+        <button ng-click="submitForm()">Submit</button>
+    </form>
+</body>
+
+</html>

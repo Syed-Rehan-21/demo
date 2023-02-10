@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-xsd type ="text/xsd" href="assignment3".xsd?>
+<catalog>
+    <car>
+        <make>Toyota</make>
+        <model>Camry</model>
+        <year>2020</year>
+        <color>Silver</color>
+        <engine>
+            <number_of_cylinders>4</number_of_cylinders>
+            <fuel_system>Fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>4</number_of_doors>
+        <transmission_type>Automatic</transmission_type>
+        <accessories radio="yes" air_conditioning="yes" power_windows="yes" power_steering="yes"
+            power_brakes="yes" />
+    </car>
+    <car>
+        <make>Honda</make>
+        <model>Civic</model>
+        <year>2021</year>
+        <color>Red</color>
+        <engine>
+            <number_of_cylinders>4</number_of_cylinders>
+            <fuel_system>Fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>2</number_of_doors>
+        <transmission_type>Manual</transmission_type>
+        <accessories radio="yes" air_conditioning="yes" power_windows="no" power_steering="yes"
+            power_brakes="yes" />
+    </car>
+    <car>
+        <make>Ford</make>
+        <model>Mustang</model>
+        <year>2022</year>
+        <color>Black</color>
+        <engine>
+            <number_of_cylinders>8</number_of_cylinders>
+            <fuel_system>Fuel injected</fuel_system>
+        </engine>
+        <number_of_doors>2</number_of_doors>
+        <transmission_type>Automatic</transmission_type>
+        <accessories radio="yes" air_conditioning="yes" power_windows="yes" power_steering="yes"
+            power_brakes="yes" />
+    </car>
+</catalog>

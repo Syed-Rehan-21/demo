@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("button").click(function () {
+                $("#panel").slideToggle();
+            });
+        });
+    </script>
+    <style>
+        #panel {
+            width: 500px;
+            height: 200px;
+            background-color: rosybrown;
+            display: none;
+        }
+    </style> 
+</head>
+
+<body>
+    <button>Toggle Panel</button>
+    <div id="panel">
+        <p>This is a sample panel.</p>
+        <p>You can show/hide it by clicking the button.</p>
+    </div>
+</body>
+
+</html>

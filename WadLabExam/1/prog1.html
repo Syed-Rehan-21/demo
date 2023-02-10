@@ -8,8 +8,9 @@
         $(document).ready(function () {
             $("#btn1").click(function () {
                 $("#name").css({
-                    "font-size": "20px"
-                }); $("#btn1").css({
+                    "font-size": "20px",
+                }); 
+                $("#btn1").css({
                     "background-color": "red",
                 });
                 alert("Text: " + $("#alerttxt").text());
@@ -18,7 +19,9 @@
                 $("#name").css({
                     "font-size": "35px"
                 });
-                $("#btn2").css({ "background-color": "blue", });
+                $("#btn2").css({ 
+                    "background-color": "blue", 
+                });
                 alert("Html code: " + $("#alerttxt").html());
             });
             $("#btn3").click(function () {

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function ($scope) {
+            $scope.firstNumber = 0;
+            $scope.secondNumber = 0;
+            $scope.result = 0;
+            $scope.addition = function () {
+                $scope.result = $scope.firstNumber + $scope.secondNumber;
+            }
+            $scope.subtraction = function () {
+                $scope.result = $scope.firstNumber - $scope.secondNumber;
+            }
+            $scope.multiplication = function () {
+                $scope.result = $scope.firstNumber * $scope.secondNumber;
+            }
+            $scope.division = function () {
+                $scope.result = $scope.firstNumber / $scope.secondNumber;
+            }
+        });
+    </script>
+</head>
+
+<body ng-app="myApp" ng-controller="myCtrl">
+    <h2>AngularJS Arithmetic Operations</h2>
+    <form>
+        First Number: <input type="text" ng-model="firstNumber"><br><br>
+        Second Number: <input type="text" ng-model="secondNumber"><br><br>
+        <input type="button" value="Addition" ng-click="addition()">
+        <input type="button" value="Subtraction" ng-click="subtraction()">
+        <input type="button" value="Multiplication" ng-click="multiplication()">
+        <input type="button" value="Division" ng-click="division()">
+    </form>
+    <br>
+    Result: {{result}}
+</body>
+
+</html>
