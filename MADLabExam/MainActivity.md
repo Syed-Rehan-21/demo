@@ -1,5 +1,4 @@
-```
-java
+```java
 package com.example.rehanq.multi6;
 import android.os.Bundle;
 import android.view.View;
