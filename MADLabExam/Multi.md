@@ -1,3 +1,6 @@
+<details>
+<summary>v1</summary>
+
 ```java
 package com.example.rehanq.multi6;
 import android.os.Bundle;
@@ -64,6 +67,38 @@ public class MainActivity extends AppCompatActivity
     }
 }
 ```
+</details>
+<details>
+<summary>v2</summary>
+
+```java
+package com.example.rehanq.multi6;
+
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
+public class MainActivity extends AppCompatActivity
+{
+    ImageView img;
+    Button bt1,bt2;
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        bt1 = findViewById(R.id.button);
+        bt2= findViewById(R.id.button2);
+        img = findViewById(R.id.imageView);
+        bt1.setOnClickListener(v -> new Thread(() -> img.post(() -> img.setImageResource(R.drawable.a))).start());
+        bt2.setOnClickListener(v -> new Thread(() -> img.post(() -> img.setImageResource(R.drawable.b))).start());
+    }
+}
+```
+</details>
+<details>
+<summary>xml</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -97,3 +132,4 @@ public class MainActivity extends AppCompatActivity
 
 </LinearLayout>
 ```
+</details>

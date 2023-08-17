@@ -1,3 +1,6 @@
+<details>
+<summary>java</summary>
+
 ```java
 package com.example.rehanq.as6;
 import androidx.activity.result.contract.ActivityResultContracts;
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity {
 
 }
 ```
+</details>
+<details>
+<summary>xml</summary>
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -57,3 +63,4 @@ public class MainActivity extends AppCompatActivity {
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 ```
+</details>
