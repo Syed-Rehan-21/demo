@@ -1,1 +1,1 @@
-Bug fix for login issue
+Bug fix for login issues
