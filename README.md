@@ -13,3 +13,8 @@
 - You create a feature/add-footer branch and commit changes.
 - Your friend creates feature/add-header and commits changes.
 - You both merge your branches into main, resolving any conflicts together.
+
+### Task 3: Rebase:
+- You and your friend both work on different branches (feature/one and feature/two).
+- One of you merges first into main.
+- The other rebases their branch onto the updated main, resolving conflicts if necessary.
