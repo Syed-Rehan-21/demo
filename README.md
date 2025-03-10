@@ -8,6 +8,8 @@
 - You: After approval, merge into main and delete the branch.
 - Your Friend: Pulls the updated main branch.
 
+## Git Merge vs Rebase:
+
 ### Task 2: Merge:
 
 - You create a feature/add-footer branch and commit changes.
