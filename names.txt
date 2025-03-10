@@ -5,4 +5,5 @@ python
 Go
 JS
 Bash
+Rust
 
